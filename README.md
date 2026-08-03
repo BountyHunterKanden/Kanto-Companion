@@ -5,6 +5,7 @@ An in-game companion that loads directly on top of the game, built for
 controller and touch play on a smaller screen.
 
 > **Fan-made; not affiliated with or endorsed by Nintendo / Game Freak / The Pokémon Company.**
+> 
 > **AI USE DISCLAIMER** This is developed with AI just like it's original version. If you do not support AI in mods that is fine. Take it or leave it.
 
 ## Controls
