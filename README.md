@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/30681639/README.md)
+
 # Kanto Companion Mobile
 
 An in-game companion that loads directly on top of the game, built for
