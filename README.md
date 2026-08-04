@@ -2,7 +2,7 @@
 # Kanto Companion Mobile
 
 An in-game companion that loads directly on top of the game, built for
-controller and touch play on a smaller screen.
+controller and touch play on a smaller screen. All screens have been optimized for a smaller display, specifically the Odin 2 Portal. The item screen has been majorly overhauled to work with a controller as well as touch controls. Instead of relying on keyboard keys for hotkeys, now R2 opens the overlay, X opens the item bag/PC screen, and Y opens the party/box screen. There is also an option to enable touch controls that will add two navigation buttons to the screen and add a transparency to the overlay so you can still see the touchpad.
 
 > **Fan-made; not affiliated with or endorsed by Nintendo / Game Freak / The Pokémon Company.**
 
