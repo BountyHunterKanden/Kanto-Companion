@@ -11,8 +11,6 @@ controller and touch play on a smaller screen. All screens have been optimized f
 ## Not yet fully compatible with Gen 2
 Expect it to be broken in Gold
 
-*******AI USE DISCLAIMER******* This is developed with AI just like it's original version. If you do not support AI in mods that is fine. Take it or leave it.
-
 ## Controls
 
 | Button | Action |
