@@ -1,5 +1,5 @@
 
-# Kanto Companion Mobile
+# Kanto Companion
 
 Forked from Discord user Matthew's existing mod, Kanto Companion (Desktop Version)
 
@@ -12,12 +12,18 @@ Works with Red/Blue/Yellow and Gold/Silver saves alike. Gen 2 support used to be
 
 ## Controls
 
-| Button | Action |
-| --- | --- |
-| **R2** | Toggle the live **overlay** (off by default), from the overworld, the overlay itself, or the Party screen. On the Items screen, R2 instead adjusts a held stack's quantity, so it doesn't also switch there. |
-| **X** | Open the **Items** screen (move items between your Bag and the PC). |
-| **Y** | Open the **Party / Boxes** screen (deposit, withdraw, rearrange, swap Pokémon). |
-| **B** | Close whichever screen is open. The overlay itself only closes with **R2** again, or by opening Items/Party. |
+| Button | Keyboard | Action |
+| --- | --- | --- |
+| **R2** | **O** or **F8** | Toggle the live **overlay** (off by default), from the overworld, the overlay itself, or the Party screen. On the Items screen, R2 instead adjusts a held stack's quantity, so it doesn't also switch there. |
+| **X** | **I** | Open the **Items** screen (move items between your Bag and the PC). |
+| **Y** | **P** | Open the **Party / Boxes** screen (deposit, withdraw, rearrange, swap Pokémon). |
+| **B** | **Escape** | Close whichever screen is open. The overlay itself only closes with **R2**/Escape again, or by opening Items/Party. |
+
+On keyboard, once a screen is open you also get **arrow keys** (switch
+Bag/PC focus or box, scroll the focused list), **-/=** (or numpad -/+)
+to adjust a held stack's quantity, and **U** for Undo. Picking up and
+dragging an item or Pokémon itself still needs a mouse, touch, or
+gamepad — there's no keyboard equivalent for that specific action.
 
 - **Touch screen nav buttons** (off by default — enable in mod options,
   "TOUCH SCREEN NAV BUTTONS"): two transparent left/right arrow buttons,
@@ -65,6 +71,27 @@ widescreen, they sit over the sides of the view. When **TOUCH SCREEN NAV
 BUTTONS** is on, the overlay also dims to about 60% opacity so the touch
 controls underneath stay visible through it.
 
+## Edit Mode — F6 (keyboard, any time) or R3 (controller, overlay must already be open)
+
+Freely drag, resize, and collapse every overlay panel to fit your screen.
+Settings persist across sessions. Mouse, touch, and gamepad (push the
+left stick for a free cursor, same as Items/Party) all work; on
+keyboard:
+
+| Key | Action |
+| --- | --- |
+| **Tab** or **Left/Right** | Switch which panel is selected. |
+| **Up/Down** | Scale the selected panel. |
+| **-/=** (or numpad -/+) | Scale every panel at once. |
+| **C** | Cycle the selected panel's collapse level (full → compact → bar, on panels that support a compact view; otherwise a plain full/collapsed toggle). |
+| **I** / **P** | Collapse / expand the selected panel one level. |
+| **R** | Reset the selected panel to its default position, scale, and collapse state. |
+| **Escape** | Close Edit Mode. |
+
+**F9** is a separate panic-reset shortcut, real keyboard only: resets
+*every* panel back to default regardless of whether Edit Mode is even
+open.
+
 ## Items (Bag ⇄ PC) — X
 
 - **Drag** an item to the other side, or tap it then tap the other side.
@@ -83,6 +110,11 @@ controls underneath stay visible through it.
   up/down stays free to pick a drop spot even mid-stack. **B** cancels a
   pending pickup; with nothing held, it closes the screen. Or push the
   **left stick** for a free cursor — see above.
+- **Keyboard:** **left/right arrow** switches Bag/PC focus, **up/down
+  arrow** scrolls the focused list, **-/=** (or numpad -/+) adjusts a
+  held stack's quantity, **U** undoes. Picking up and dropping an item
+  itself needs a mouse, touch, or gamepad — there's no keyboard
+  equivalent for that one action.
 - **Sort** each side by Type / A–Z / Qty (view only). On the **Bag** you
   can **Save order** to make it stick in-game (with a controller: **D-pad
   up** from the top row of the Bag list selects it, **A** saves, **D-pad
@@ -109,6 +141,9 @@ controls underneath stay visible through it.
 - **Controller:** the D-pad only switches boxes here — for grabbing and
   dropping a Pokémon, push the **left stick** for a free cursor, same as
   Items above.
+- **Keyboard:** **left/right arrow** switches boxes, **U** undoes.
+  Grabbing and dropping a Pokémon itself needs a mouse, touch, or
+  gamepad — same limitation as Items above.
 - **Select** multiple Pokémon at once (Boxes only, not Party) to bulk
   move between boxes or release — release shows a confirmation popup
   first.
