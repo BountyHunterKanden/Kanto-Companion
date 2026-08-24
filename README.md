@@ -4,12 +4,11 @@
 Forked from Discord user Matthew's existing mod, Kanto Companion (Desktop Version)
 
 An in-game companion that loads directly on top of the game, built for
-controller and touch play on a smaller screen. All screens have been optimized for a smaller display, specifically the Odin 2 Portal. The item screen has been majorly overhauled to work with a controller as well as touch controls. Instead of relying on keyboard keys for hotkeys, now R2 opens the overlay, X opens the item bag/PC screen, and Y opens the party/box screen. There is also an option to enable touch controls that will add two navigation buttons to the screen and add a transparency to the overlay so you can still see the touchpad.
+controller and touch play on a smaller screen, in landscape or portrait. All screens have been optimized for a smaller display, specifically the Odin 2 Portal. The item screen has been majorly overhauled to work with a controller as well as touch controls. Instead of relying on keyboard keys for hotkeys, now R2 opens the overlay, X opens the item bag/PC screen, and Y opens the party/box screen. There is also an option to enable touch controls that will add two navigation buttons to the screen and add a transparency to the overlay so you can still see the touchpad.
+
+Works with Red/Blue/Yellow and Gold/Silver saves alike. Gen 2 support used to be experimental with real gaps — the Battle panel, badges, Pokédex tracking, and wild encounters were all broken — but as of 2.10.0 those are fixed and it's fully supported.
 
 > **Fan-made; not affiliated with or endorsed by Nintendo / Game Freak / The Pokémon Company.**
-
-## Not yet fully compatible with Gen 2
-Expect it to be broken in Gold
 
 ## Controls
 
@@ -40,17 +39,25 @@ The Items and Party/Boxes screens open only from the overworld; while one
 is up, the game pauses and all input goes to the screen. Press the same
 button again, or **B**, to close.
 
+## Portrait mode
+
+Held in portrait, the overlay and the Items/Party-Boxes screens both lay
+out as a single swipeable page instead of two side-by-side columns —
+swipe left/right, or tap the small dots that appear on the left edge
+while paging, to move between panels.
+
 ## Overlay — R2
 
 - **Left:** your party — sprite, HP bar (animated), XP-to-next, level,
   status, types, and moves + PP. The mon that's out in battle is
   highlighted.
 - **Right:** trainer info (money, play time, badges, dex) + route
-  encounters (grass/surf with %, level ranges, sprites). During a battle
+  encounters (grass/surf with %, level ranges, sprites, and how many of
+  each species you've battled, caught, and defeated). During a battle
   this swaps to a battle readout: your best moves ranked by effectiveness
-  + STAB, the enemy's super-effective threats, a speed indicator, and —
-  in wild battles — live per-ball catch odds at the target's current
-  HP/status.
+  + STAB, the enemy's super-effective threats, a speed indicator, a
+  caught indicator next to the opponent's name, and — in wild battles —
+  live per-ball catch odds at the target's current HP/status.
 
 The overlay is read-only. Panels are anchored to the left/right edges and
 scale to your window (designed against 1440p); since the game renders
@@ -80,7 +87,14 @@ controls underneath stay visible through it.
   can **Save order** to make it stick in-game (with a controller: **D-pad
   up** from the top row of the Bag list selects it, **A** saves, **D-pad
   down** returns to the list); the in-game **PC is always A–Z**, so its
-  sort is browsing-only.
+  sort is browsing-only. On **Gold/Silver** saves, items are grouped into
+  the game's real 4 pockets (Items / Balls / Key Items / TMs & HMs)
+  instead — drag a pocket's header to reorder it.
+- **Select** multiple items at once to bulk transfer or discard — discard
+  shows a confirmation popup first.
+- **Search** for an item by name instead of scrolling.
+- **Undo** reverses your last action on this screen (multi-level, until
+  you close it).
 - A destination that can't accept the item turns **red** with the reason
   (bag/PC full, stack maxed).
 
@@ -95,6 +109,12 @@ controls underneath stay visible through it.
 - **Controller:** the D-pad only switches boxes here — for grabbing and
   dropping a Pokémon, push the **left stick** for a free cursor, same as
   Items above.
+- **Select** multiple Pokémon at once (Boxes only, not Party) to bulk
+  move between boxes or release — release shows a confirmation popup
+  first.
+- **Search** for a Pokémon by name instead of scrolling.
+- **Undo** reverses your last action on this screen (multi-level, until
+  you close it).
 - Rules are enforced: boxes hold 20, the party holds 6, you can't deposit
   your last Pokémon, and the party is **never left without a healthy
   Pokémon** (a swap that brings a healthy one in is fine).
