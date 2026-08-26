@@ -6,7 +6,7 @@ Forked from Discord user Matthew's existing mod, Kanto Companion (Desktop Versio
 An in-game companion that loads directly on top of the game, built for
 controller and touch play on a smaller screen, in landscape or portrait. All screens have been optimized for a smaller display, specifically the Odin 2 Portal. The item screen has been majorly overhauled to work with a controller as well as touch controls. Instead of relying on keyboard keys for hotkeys, now R2 opens the overlay, X opens the item bag/PC screen, and Y opens the party/box screen. There is also an option to enable touch controls that will add two navigation buttons to the screen and add a transparency to the overlay so you can still see the touchpad.
 
-Works with Red/Blue/Yellow and Gold/Silver saves alike. Gen 2 support used to be experimental, with real gaps (the Battle panel, badges, Pokédex tracking, and wild encounters were all broken), but as of 2.10.0 those are fixed and it's fully supported.
+Works with Red/Blue/Yellow and Gold/Silver saves alike.
 
 > **Fan-made; not affiliated with or endorsed by Nintendo / Game Freak / The Pokémon Company.**
 
@@ -153,27 +153,6 @@ open.
 - Rules are enforced: boxes hold 20, the party holds 6, you can't deposit
   your last Pokémon, and the party is **never left without a healthy
   Pokémon** (a swap that brings a healthy one in is fine).
-
-## Debug input HUD (Android / no log access)
-
-Since v2.4.0, a small "last input -> ..." readout appears in the
-bottom-left corner for a few seconds after any button, gamepad input, or
-raw touch event. Useful for confirming exactly what a control reports,
-without needing a computer to read logs. Off by default; it's a toggle in
-the **F10 mod manager**: open the manager, select **Kanto Companion**,
-and flip **DEBUG INPUT HUD** on (e.g. when positioning the touch nav
-buttons on a new device). No file editing or restart needed; it takes
-effect immediately.
-
-As of v2.4.1, raw touches also show as a **percentage of the current
-window size**, e.g. `touch: 392,406 (20.4%,37.6% of 1920x1080)`, not just
-raw pixel coordinates. Raw pixels only mean something on the exact
-screen they were measured on, so percentage is what actually carries over
-to a different screen size or resolution. This is the same
-percentage-of-window approach `TOUCH_NAV_LEFT`/`TOUCH_NAV_RIGHT` in
-`main.lua` use to position the touch nav buttons. If they land somewhere
-awkward on your device, tap around where you'd expect them and read the
-percentage off the HUD to retune the bounds.
 
 ## Install
 
